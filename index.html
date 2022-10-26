@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Datavisualisatie met Javascript</title>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/white.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <section>
+                    <h1>Datavisualisatie met Javascript</h1>
+                </section>
+                <section>
+                    <ul>
+                        <li>Software
+                            <ul>
+                                <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
+                                <li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+                                        target="_blank">Visual
+                                        Studio Code: Live Server</a></li>
+                                <li><a
+                                        href="https://marketplace.visualstudio.com/items?itemName=ren-wei.echarts-enhanced-completion">Visual
+                                        Studio Code: ECharts</a></li>
+                                <li><a href="https://github.com/MIW-22/challenges">Challenges</a></li>
+                            </ul>
+                        </li>
+                        <li>Hulp
+                            <ul>
+                                <li><a href="https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-introduction/cheatsheet"
+                                        target="_blank">Javascript: kort overzicht</a></li>
+
+                                <li><a href="https://echarts.apache.org/en/cheat-sheet.html" target="_blank">ECharts:
+                                        kort overzicht</a>
+                                </li>
+                                <li><a href="https://echarts.apache.org/en/spreadsheet.html" target="_blank">Echarts:
+                                        Excel naar 2D-array converteren</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Uitgebreide informatie
+                            <ul>
+                                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                        target="_blank">Javascript</a>
+                                </li>
+
+                                <li><a href="https://echarts.apache.org/handbook/en/get-started"
+                                        target="_blank">ECharts</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <img
+                    src="https://www.presentationpoint.com/wp-content/uploads/2018/12/MS-Graph-in-PowerPoint-inserted-graph-1280x693.jpg">
+            </section>
+
+            <section>
+                <img src="./img/seatable.jpeg">
+            </section>
+
+            <section data-background-iframe="https://solidlab.ugent.be/data-initiatives/" data-background-interactive>
+            </section>
+    
+            <section>
+                Het web in 1995<br>
+                <img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Mosaic_Netscape_0.9_on_Windows_XP.png">
+            </section>
+
+            <section>
+                <img src="https://www.nndb.com/people/095/000031002/brendan-eich-2-sized.jpg">
+                <img src="https://d2bs8hqp6qvsw6.cloudfront.net/article/images/750x750/dimg/m_img_23887.jpg">
+            </section>
+
+            <section>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Microsoft_logo_%281987%29_%2B_slogan_%281994%29.svg/1024px-Microsoft_logo_%281987%29_%2B_slogan_%281994%29.svg.png">
+            </section>
+
+            <section>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Browser_Wars_%28en%29.svg/1280px-Browser_Wars_%28en%29.svg.png">
+            </section>
+
+            <section>
+                <img src="https://miro.medium.com/freeze/max/600/1*_FOV6txTo25KQ8NmPdbliQ.gif">
+            </section>
+
+            <section>
+                <img src="https://html-css-js.com/images/og.jpg">
+            </section>
+
+            <section>
+                Variabelen
+                <pre><code data-trim>
+                    // Maak een variabele aan.
+                    let aantalAppels;
+                    
+                    // Sla een waarde op in de variabele.
+                    aantalAppels = 5;
+
+                    // Wijzig de waarde in de variabele.
+                    aantalAppels = 4;
+                    aantalAppels = 3;
+                    aantalAppels = aantalAppels - 1;
+
+                    // Geef de waarde van een variabele weer in de console.
+                    console.log(aantalAppels);
+                </code></pre>
+            </section>
+
+            <section>
+                String, Number, Boolean
+                <pre><code data-trim>
+                    // Maak een variabele aan.
+                    let mijnVariabele;
+
+                    // String (tekst)
+                    mijnVariabele = "Hello World!";
+
+                    // Number (getallen)
+                    mijnVariabele = 10;
+                    mijnVariabele = 3.14;
+
+                    // Boolean (waar of vals)
+                    let isTaartLekker = true;
+                    let isZaterdag = false;
+                </code></pre>
+            </section>
+
+            <section>
+                Sluit ieder statement af met een ;
+                <pre><code data-trim>
+                    let zin;
+                    zin = "The quick brown fox jumps over the lazy dog";
+
+                    // Je kan code over meerdere lijnen schrijven.
+
+                    zin
+
+                      = 
+                    
+                     "hallo"
+                    
+                     ;
+                </code></pre>
+            </section>
+
+            <section>
+                Array
+                <pre><code data-trim>
+                    // Array (lijst van waarden)
+                    let mijnVariabele = ["Alice", "Bob", 23];
+
+                    // Een Array kan andere Arrays bevatten.
+                    mijnVariabele = ["Alice", "Bob", ["Netscape", 1] ];
+                </code></pre>
+            </section>
+
+            <section>
+                Data opslaan in een Array.
+                <pre><code data-trim>
+                    let studenten = [ 
+                        ["naam", "leeftijd", "richting"],
+                        ["Tine", 20, "Wiskunde"],
+                        ["Tom", 19, "Communicatiewetenschappen"],
+                        ["Anna", 23, "Filosofie"],
+                        ["Theo", 18, "Geneeskunde"]
+                    ];
+                </code></pre>
+            </section>
+
+            <section>
+                Object
+                <pre><code data-trim>
+                    // Object (woordenboek)
+                    let auto = {
+                        merk: 'Volkswagen',
+                        gewicht: 2500,
+                        brandstof: 'diesel',
+                        magInLez: true
+                    };
+                </code></pre>
+            </section>
+
+            <section>
+                Data ophalen uit een object.
+                <pre><code data-trim>
+                    let auto = {
+                        merk: 'Volkswagen',
+                        gewicht: 2500,
+                        brandstof: 'diesel',
+                        magInLez: true
+                    };
+                    
+                    // Toon het merk van de auto. 
+                    writeToPage(auto.merk);
+                </code></pre>
+            </section>
+
+            <section>
+                Functies gebruiken
+                <pre><code data-trim>
+                    let zin = 'Hallo!';
+                    writeToPage(zin);
+                </code></pre>
+            </section>
+
+            <section>
+                <img src="./img/cat-api.PNG">
+            </section>
+
+            <section>
+                Functies gebruiken
+                <pre><code data-trim>
+                    let catFact;
+                    catFact = await getJson("https://meowfacts.herokuapp.com/");
+                    writeToPage(catFact.data);
+                </code></pre>
+                <pre><code data-trim id="cat-fact-obj">
+                </code></pre>
+                <script>
+                    fetch('https://meowfacts.herokuapp.com/')
+                        .then(res => res.json())
+                        .then(obj => {
+                            document.getElementById('cat-fact-obj').innerHTML = obj.data.toString();
+                        });
+                </script>
+            </section>
+
+            <section>
+                <img src="./img/googleit.jpg">
+            </section>
+
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>
